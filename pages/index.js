@@ -1,6 +1,7 @@
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
 import {AlurakutMenu, OrkutNostalgicIconSet} from '../src/lib/AlurakutCommons'
+import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations'
 
 function ProfileSidebar(propriedades) {
   return(
@@ -30,7 +31,7 @@ export default function Home() {
         </Box>
       </div>
       <div className="profileRelationsArea"style={{gridArea: 'profileRelationsArea'}}>
-        <Box> 
+        <ProfileRelationsBoxWrapper> 
           <h2 className="smallTitle">
             
           Pessoas da Comunidade ({pessoasFavoritas.length})</h2>
@@ -46,7 +47,7 @@ export default function Home() {
             )
           })}
           </ul>
-        </Box>
+        </ProfileRelationsBoxWrapper>
       </div>     
     </MainGrid>
     </>
