@@ -19,12 +19,14 @@ function Link({ href, children, ...props }) {
 // ================================================================================================================
 // Menu
 // ================================================================================================================
+
 export function AlurakutMenu({ githubUser }) {
+
   const [isMenuOpen, setMenuState] = React.useState(false);
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />
+        <AlurakutMenu.Logo  src={`${BASE_URL}/logo.svg`} alt="Alurakut Logo"/>
 
         <nav style={{ flex: 1 }}>
           {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
@@ -56,7 +58,7 @@ AlurakutMenu.Wrapper = styled.header`
   width: 100%;
   background-color: #000;
   .alurakutMenuProfileSidebar {
-    background: white;
+    background: black;
     position: fixed;
     z-index: 100;
     padding: 46px;
@@ -80,16 +82,17 @@ AlurakutMenu.Wrapper = styled.header`
     }
     .boxLink {
       font-size: 18px;
-      color: #000;
+      color: #FFF;
       -webkit-text-decoration: none;
       text-decoration: none;
       font-weight: 800;
+    }
     }
     hr {
       margin-top: 12px;
       margin-bottom: 8px;
       border-color: transparent;
-      border-bottom-color: #ECF2FA;
+      border-bottom-color: #333;
     }
   }
   .container {
@@ -120,7 +123,7 @@ AlurakutMenu.Wrapper = styled.header`
       }
       a {
         font-size: 12px;
-        color: white;
+        color: #FFF;
         padding: 10px 16px;
         position: relative;
         text-decoration: none;
@@ -150,13 +153,13 @@ AlurakutMenu.Wrapper = styled.header`
       font-size: 12px;
       ::placeholder {
         color: #ffffff;
-        opacity: 1;
+        opacity: 50%;
       }
     } 
   }
 `;
 AlurakutMenu.Logo = styled.img`
-  background-color: #FFF;
+  background-image: linear-gradient(to bottom right, #AE44C8, #D81D99);
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
@@ -222,7 +225,7 @@ export function AlurakutProfileSidebarMenuDefault() {
 AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
   a {
     font-size: 12px;
-    color: #000;
+    color: #FFF;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -352,7 +355,7 @@ const AlurakutLoginScreen = css`
     }
     .logoArea {
       grid-area: logoArea;
-      background-color: var(--backgroundTertiary);
+      background-color: #fff;
       border-radius: var(--commonRadius);
       padding: var(--gutter);
       text-align: center;
@@ -423,14 +426,17 @@ const AlurakutLoginScreen = css`
           margin-top: 24px;
           margin-bottom: 16px;
         }
+        .main-label {
+          color: #FFF;
+        }
         button {
           width: 100%;
           display: block;
           border: 0;
           padding: 12px;
           border-radius: var(--commonRadius);
-          background-color: var(--colorPrimary);
-          color: var(--textSecondaryColor);
+          background-color: #D81D99;
+          color: #FFF;
         }
       }
     }
@@ -483,6 +489,7 @@ export const AlurakutStyles = css`
     }
   }
   input {
+    color: #FFF;
     transition: .3s;
     outline: 0;
     &:disabled {

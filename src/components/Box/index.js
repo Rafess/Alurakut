@@ -8,7 +8,7 @@ const Box = styled.div`
   margin-bottom: 10px;
   .boxLink {
     font-size: 14px;
-    color: #2E7BB4;
+    color: #FFF;
     text-decoration: none;
     font-weight: 800;
   }
@@ -19,6 +19,7 @@ const Box = styled.div`
     color: #FFF;
   }
   .subTitle {
+    color: #FFF;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -39,14 +40,14 @@ const Box = styled.div`
   input {
     width: 100%;
     background-color: #333333;
-    color: #333333;
+    color: #FFF;
     border: 0;
     padding: 14px 16px;
     margin-bottom: 14px;
     border-radius: 10000px;
     ::placeholder {
-      color: #333333;
-      opacity: 1;
+      color: #FFF;
+      opacity: 50%;
     }
   }
   button {
@@ -54,7 +55,7 @@ const Box = styled.div`
     padding: 8px 12px;
     color: #FFFFFF;
     border-radius: 10000px;
-    background-color: #6F92BB;
+    background-image: linear-gradient(to bottom right, #AE44C8, #D81D99);
   }
   `;
 
