@@ -26,7 +26,7 @@ export function AlurakutMenu({ githubUser }) {
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <AlurakutMenu.Logo  src={`${BASE_URL}/logo.svg`} alt="Alurakut Logo"/>
+        <AlurakutMenu.Logo  src={`https://www.datocms-assets.com/52468/1626734711-logo.png`} alt="Alurakut Logo"/>
 
         <nav style={{ flex: 1 }}>
           {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
