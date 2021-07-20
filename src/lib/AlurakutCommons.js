@@ -26,7 +26,7 @@ export function AlurakutMenu({ githubUser }) {
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
       <div className="container">
-        <AlurakutMenu.Logo  src={`https://www.datocms-assets.com/52468/1626734711-logo.png`} alt="Alurakut Logo"/>
+       <a href='#top'> <AlurakutMenu.Logo  src={`https://www.datocms-assets.com/52468/1626734711-logo.png`} alt="Alurakut Logo"/> </a>
 
         <nav style={{ flex: 1 }}>
           {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
@@ -355,7 +355,7 @@ const AlurakutLoginScreen = css`
     }
     .logoArea {
       grid-area: logoArea;
-      background-color: #fff;
+      background-color: #000;
       border-radius: var(--commonRadius);
       padding: var(--gutter);
       text-align: center;
@@ -369,17 +369,18 @@ const AlurakutLoginScreen = css`
         min-height: 368px;
       }
       p {
+        color: #FFF;
         font-size: 12px;
         line-height: 1.2;
         &:not(:last-child) {
           margin-bottom: 12px;
         }
         strong {
-          color: var(--colorQuarternary);
+          color: #D81D99;
         }
       }
       img {
-        max-height: 45px;
+        max-height: 75px;
         margin-bottom: 36px;
       }
     }
@@ -397,7 +398,7 @@ const AlurakutLoginScreen = css`
         padding: var(--gutter);
         padding-left: 50px;
         padding-right: 50px;
-        background-color: var(--backgroundSecondary);
+        background-color: #000;
         border-radius: var(--commonRadius);
         flex: 1;
         &:not(:last-child) {
@@ -410,11 +411,12 @@ const AlurakutLoginScreen = css`
           }
         }
         p {
+          color: #FFF;
           font-size: 14px;
         }
         a {
           text-decoration: none;
-          color: var(--colorPrimary);
+          color: #D81D99;
         }
         input {
           width: 100%;
@@ -442,15 +444,17 @@ const AlurakutLoginScreen = css`
     }
     .footerArea {
       grid-area: footerArea;
-      background-color: var(--backgroundQuarternary);
+      background-color: #000;
       border-radius: var(--commonRadius);
       padding: 8px;
       p {
+        color: #fff;
         font-size: 12px;
         text-align: center;
         a {
+          color: #fff;
           text-decoration: none;
-          color: var(--colorPrimary);
+          
         }
       }
     }
