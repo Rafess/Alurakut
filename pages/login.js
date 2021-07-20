@@ -11,7 +11,7 @@ export default function loginPage() {
         <main style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'center' }}>
           <div className="loginScreen">
             <section className="logoArea">
-              <img src="https://www.datocms-assets.com/52468/1626735344-alurakut-login.png" />
+              <img src="https://www.datocms-assets.com/52468/1626752949-alurakut-login.png" />
     
               <p><strong>Conecte-se</strong> aos seus amigos e familiares usando recados e mensagens instantâneas</p>
               <p><strong>Conheça</strong> novas pessoas através de amigos de seus amigos e comunidades</p>
