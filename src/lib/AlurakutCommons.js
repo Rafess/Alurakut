@@ -192,30 +192,30 @@ export function AlurakutProfileSidebarMenuDefault() {
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
         <a href="/">
-          <img src={`${BASE_URL}/icons/user.svg`} />
+          <img src={`https://www.datocms-assets.com/52468/1626750699-user.png`} />
             Perfil
           </a>
         <a href="/">
-          <img src={`${BASE_URL}/icons/book.svg`} />
+          <img src={`https://www.datocms-assets.com/52468/1626750782-book-open-thin.png`} />
             Recados
           </a>
         <a href="/">
-          <img src={`${BASE_URL}/icons/camera.svg`} />
+          <img src={`https://www.datocms-assets.com/52468/1626750803-camera-thin.png`} />
             Fotos
           </a>
         <a href="/">
-          <img src={`${BASE_URL}/icons/sun.svg`} />
+          <img src={`https://www.datocms-assets.com/52468/1626750833-sun-thin.png`} />
             Depoimentos
           </a>
       </nav>
       <hr />
       <nav>
         <a href="/">
-          <img src={`${BASE_URL}/icons/plus.svg`} />
+          <img src={`https://www.datocms-assets.com/52468/1626750854-plus-thin.png`} />
             GitHub Trends
           </a>
         <a href="/logout">
-          <img src={`${BASE_URL}//icons/logout.svg`} />
+          <img src={`https://www.datocms-assets.com/52468/1626750918-sign-out-thin.png`} />
             Sair
           </a>
       </nav>
@@ -246,26 +246,26 @@ export function OrkutNostalgicIconSet(props) {
   return (
     <OrkutNostalgicIconSet.List>
       {[
-        { name: 'Recados', slug: 'recados', icon: 'book' },
-        { name: 'Fotos', slug: 'fotos', icon: 'camera' },
-        { name: 'Videos', slug: 'videos', icon: 'video-camera' },
-        { name: 'Fãs', slug: 'fas', icon: 'star' },
-        { name: 'Mensagens', slug: 'mensagens', icon: 'email' },
+        { name: 'Recados', slug: 'recados', icon: '1626751613-book'},
+        { name: 'Fotos', slug: 'fotos', icon: '1626751642-camera' },
+        { name: 'Videos', slug: 'videos', icon: '1626751697-video-camera' },
+        { name: 'Fãs', slug: 'fas', icon: '1626751672-star' },
+        { name: 'Mensagens', slug: 'mensagens', icon: '1626751687-email' },
       ].map(({ name, slug, icon }) => (
         <li key={`orkut__icon_set__${slug}`}>
           <span style={{ gridArea: 'title' }} className="OrkutNostalgicIconSet__title">
             {name}
           </span>
           <span className="OrkutNostalgicIconSet__number" style={{ gridArea: 'number' }}>
-            <img key={`orkut__icon_set__${slug}_img`} className="OrkutNostalgicIconSet__iconSample" src={`https://alurakut.vercel.app/icons/${icon}.svg`} />
+            <img key={`orkut__icon_set__${slug}_img`} className="OrkutNostalgicIconSet__iconSample" src={`https://www.datocms-assets.com/52468/${icon}.png`} />
             {props[slug] ? props[slug] : 0}
           </span>
         </li>
       ))}
       {[
-        { name: 'Confiável', slug: 'confiavel', icon: 'smile' },
-        { name: 'Legal', slug: 'legal', icon: 'cool' },
-        { name: 'Sexy', slug: 'sexy', icon: 'heart' },
+        { name: 'Confiável', slug: 'confiavel', icon: '1626751762-smile' },
+        { name: 'Legal', slug: 'legal', icon: '1626751783-cool' },
+        { name: 'Sexy', slug: 'sexy', icon: '1626751739-fire' },
       ].map(({ name, slug, icon }) => {
         const total = props[slug] ? props[slug] : 2;
         return (
@@ -276,7 +276,7 @@ export function OrkutNostalgicIconSet(props) {
             <span className="OrkutNostalgicIconSet__iconComplex" className="OrkutNostalgicIconSet__number" style={{ gridArea: 'number' }}>
               {[0, 1, 2].map((_, index) => {
                 const isHeartActive = index <= (total - 1);
-                return <img key={`orkut__icon_set__${slug}_img_${index}`} src={`https://alurakut.vercel.app/icons/${icon}.svg`} style={{ marginRight: '2px', opacity: isHeartActive ? 1 : '0.5' }} />
+                return <img key={`orkut__icon_set__${slug}_img_${index}`} src={`https://www.datocms-assets.com/52468/${icon}.png`} style={{ marginRight: '2px', opacity: isHeartActive ? 1 : '0.5' }} />
               })}
             </span>
           </li>
@@ -307,12 +307,18 @@ OrkutNostalgicIconSet.List = styled.ul`
       font-style: italic; 
     }
     .OrkutNostalgicIconSet__number {
-      min-width: 15px;
+      min-width: 13px;
       display: flex;
       align-items: center;
       justify-content: flex-start;
+      width: 13px;
+      height: 13px; 
       .OrkutNostalgicIconSet__iconSample {
         margin-right: 7px;
+        width: 16px;
+        height: 16px;
+        
+        }
       }
     }
   }
