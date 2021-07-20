@@ -312,7 +312,8 @@ OrkutNostalgicIconSet.List = styled.ul`
       align-items: center;
       justify-content: flex-start;
       width: 13px;
-      height: 13px; 
+      height: 13px;
+      margin-right: 5px; 
       .OrkutNostalgicIconSet__iconSample {
         margin-right: 7px;
         width: 16px;
